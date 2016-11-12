@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InstaTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="key_pref">insta_key</string>
+
+    <string name="url_instagram">https://instagram.com/oauth/authorize/?client_id=687511b9464d4861a6a96603e59cc188&amp;redirect_uri=http://www.sparkeek.net/&amp;response_type=token
+</string>
+</resources>

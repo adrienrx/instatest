@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lin_layout_profil"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgview_profil"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_profil_total_publication"
+            android:gravity="center"
+            android:text="bla"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:textColor="@color/bb_darkBackgroundColor"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="bla"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_profil_total_followers"
+            android:textColor="@color/bb_darkBackgroundColor"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_profil_total_follows"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="bla"
+            android:textColor="@color/bb_darkBackgroundColor"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <!-- A RecyclerView with some commonly used attributes -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/timeline_profil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/lin_layout_profil"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/btn_test"
+        android:layout_marginTop="200dp"
+
+ />
+
+
+</FrameLayout>

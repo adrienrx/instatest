@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.sparkeek.instatest">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="InstaTest"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label"
+        android:name="net.sparkeek.instatest.ApplicationPOC"
+        >
+
+        <activity
+            android:name="net.sparkeek.instatest.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="980afde7f12ed356cf3fdd70fc99fe105eec8e4d" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
